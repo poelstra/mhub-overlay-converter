@@ -1,0 +1,26 @@
+{
+    "version": "1.4.1",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": true,
+        "noImplicitAny": true,
+        "removeComments": false,
+        "sourceMap": true,
+        "rootDir": "..",
+        "outDir": "../../dist/",
+        "noLib": false
+    },
+    "filesGlob": [
+        "../../typings/tsd.d.ts",
+        "./**/*.ts"
+    ],
+    "files": [
+        "../../typings/tsd.d.ts",
+        "./converter.ts",
+        "./twitter_pusher.ts"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
+}
