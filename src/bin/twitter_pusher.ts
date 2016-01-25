@@ -120,7 +120,7 @@ function postShown(cb: () => void): void {
 
 function postDeleted(cb: () => void): void {
 	util.log("Deleted: " + deletedIDs.join(","));
-	if (shownIDs.length > 0) {
+	if (deletedIDs.length > 0) {
 		getAll("deleted.php", {
 			ids: deletedIDs.join(",")
 		}, (err: Error): void => {
