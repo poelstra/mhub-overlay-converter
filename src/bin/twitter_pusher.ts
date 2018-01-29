@@ -49,7 +49,7 @@ interface Tweet {
 	shown: string; // ISO date string
 	created: string; // ISO date string
 	author: string;
-	message: string;
+	tweet: string;
 }
 
 function parseTweets(data: string): Tweet[] {
@@ -66,7 +66,7 @@ function parseTweets(data: string): Tweet[] {
 			shown: parts.getPart(),
 			created: parts.getPart(),
 			author: parts.getPart(),
-			message: parts.getRest()
+			tweet: parts.getRest()
 		};
 		if (tweet.created === "0") {
 			tweet.created = null;
